@@ -92,7 +92,7 @@ where
 select
 	name,
 	address,
-	count(*) as address_count # count 전체 갯수, as 이름 지정
+	count(*) as address_count # count 전체 갯수, as(ALIAS) 이름 지정
 from
 	student_tb
 group by

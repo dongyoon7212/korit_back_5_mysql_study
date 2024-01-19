@@ -44,3 +44,15 @@ from
 	product_tb
 group by
 	product_size;
+    
+    
+# 제1정규화 -> 하나의 칸엔 하나의 데이터만
+
+# 제2정규화 -> 현재 테이블의 주제와 관련없는 칼럼을 다른 테이블로 빼는 작업
+# 제2정규화를 만족하는 테이블은 제2정규형
+# 제2정규형이란? partial dependency를 제거한 테이블
+# composite primary key란? 서로 다른 칼럼 두개를 합쳐서 primary key로 사용하는 것
+# parial dependency(하나의 composite primary key에 종속)
+
+# 제3정규화 -> 일반 칼럼에만 종속된 컬럼은 다른 테이블로 빼기
+# 제3정규화를 만족하는 테이블은 제3정규형

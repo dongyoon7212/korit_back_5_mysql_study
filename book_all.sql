@@ -17,6 +17,7 @@ from
 		left outer join book_tb bt on(bt.book_id = brt.book_id)
 		left outer join author_tb at on(at.author_id = bt.author_id)
 		left outer join publisher_tb pt on(pt.publisher_id = bt.publisher_id)
+        # 확정이 된 것 inner join 아닌 것 left outer join
 	group by
 		brt.book_id,
 		bt.author_id,
